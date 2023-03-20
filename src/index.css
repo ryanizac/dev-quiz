@@ -19,3 +19,8 @@
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
 }
+
+html,
+body {
+  margin: 0;
+}
