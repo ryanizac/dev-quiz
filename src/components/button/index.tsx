@@ -2,18 +2,25 @@ import { ReactNode } from "react";
 import { mappedColors } from "../../theme";
 import { StyledButton } from "./styles";
 
-export function Button({ color = "orange", ...props }: Button.Props) {
+export function Button({
+  color = "orange",
+  children,
+  className,
+  onClick,
+  ...props
+}: Button.Props) {
   const themeColor = mappedColors[color];
 
   return (
     <StyledButton
       primary={themeColor.primary}
       secondary={themeColor.secondary}
-      onClick={props.onClick}
+      onClick={onClick}
       isWhite={color === "white"}
-      className={props.className}
+      className={className}
+      {...props}
     >
-      {props.children}
+      {children}
     </StyledButton>
   );
 }

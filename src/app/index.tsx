@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { JoinAServerPage, WaitingForServerPage } from "../pages";
+import { JoinAServerPage, QuestionPage, WaitingForServerPage } from "../pages";
 
 export function App() {
   return (
@@ -7,6 +7,7 @@ export function App() {
       <Routes>
         <Route path="/" Component={JoinAServerPage} />
         <Route path="/waiting" Component={WaitingForServerPage} />
+        <Route path="/question" Component={QuestionPage} />
       </Routes>
     </BrowserRouter>
   );

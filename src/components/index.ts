@@ -10,3 +10,5 @@ export * from "./button-svg";
 export * from "./title";
 export * from "./list";
 export * from "./info";
+export * from "./button-area";
+export * from "./timer";

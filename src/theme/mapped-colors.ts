@@ -7,4 +7,26 @@ export const mappedColors = {
     primary: "FF5733",
     secondary: "CF4E32",
   },
+  gray: {
+    primary: "BBBBBB",
+    secondary: "8F8F8F",
+  },
+  pink: {
+    primary: "EE4266",
+    secondary: "CC3857",
+  },
+  purple: {
+    primary: "540D6E",
+    secondary: "400B53",
+  },
+  blue: {
+    primary: "369DDD",
+    secondary: "2B76A5",
+  },
+  green: {
+    primary: "0EAD69",
+    secondary: "0D9359",
+  },
 };
+
+export type ColorKey = keyof typeof mappedColors;
