@@ -10,6 +10,7 @@ import {
   Modal,
 } from "../../components";
 import { ButtonSVG } from "../../components/button-svg";
+import { Link } from "../../components/link";
 
 export function JoinAServerPage() {
   const [nickname, setNickname] = useState("");
@@ -32,7 +33,9 @@ export function JoinAServerPage() {
           />
           <Input placeholder="server" value={server} setValue={setServer} />
         </Form>
-        <Button>Join</Button>
+        <Link to="/waiting">
+          <Button>Join</Button>
+        </Link>
       </Modal>
       <Footer />
     </Container>

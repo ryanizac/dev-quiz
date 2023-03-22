@@ -6,4 +6,8 @@ export const StyledLink = styled(Link)`
   font-size: 20px;
   font-weight: 500;
   text-decoration: none;
+
+  :has(button) {
+    width: 100%;
+  }
 `;

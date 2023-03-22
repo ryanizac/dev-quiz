@@ -7,3 +7,6 @@ export * from "./button";
 export * from "./footer";
 export * from "./header";
 export * from "./button-svg";
+export * from "./title";
+export * from "./list";
+export * from "./info";

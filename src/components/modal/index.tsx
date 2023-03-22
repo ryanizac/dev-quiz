@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
-export const Modal = styled.div`
+type ModalProps = {
+  center?: boolean;
+};
+
+export const Modal = styled.div<ModalProps>`
   display: flex;
   flex-direction: column;
+  align-items: ${({ center }) => (center ? "center" : "auto")};
   background-color: #fffcf9;
   color: #202020;
   padding: 64px 32px;

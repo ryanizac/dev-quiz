@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { StyledLink } from "./styles";
 
 export function Link(props: Link.Props) {
@@ -7,6 +8,6 @@ export function Link(props: Link.Props) {
 export namespace Link {
   export type Props = {
     to: string;
-    children: string;
+    children: ReactNode | ReactNode[];
   };
 }
