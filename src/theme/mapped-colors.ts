@@ -27,6 +27,14 @@ export const mappedColors = {
     primary: "0EAD69",
     secondary: "0D9359",
   },
+  yellow: {
+    primary: "F3C530",
+    secondary: "F3C530",
+  },
+  black: {
+    primary: "383838",
+    secondary: "202020",
+  },
 };
 
 export type ColorKey = keyof typeof mappedColors;
